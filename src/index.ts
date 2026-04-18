@@ -232,11 +232,23 @@ export async function fetchWithRetry(
 
   throw lastError!;
 }
-
+/**
+ * A convenience wrapper around `fetchWithRetry` that automatically parses the response as JSON.
+ * @param input - The resource that you wish to fetch. Can be a URL string, URL object, or Request object.
+ * @param init - An object containing any custom settings that you want to apply to the request.
+ *               Extends the standard RequestInit with an optional `retry` property.
+ * @param init.retry - Retry configuration. Can be either:
+ *                    - A `number` to specify only maxRetries (uses defaults for other options)
+ *                   - A {@link RetryConfig} object for full control over retry behavior
+ * @return A Promise that resolves to the parsed JSON object of type T.
+ * @throws {Error} Throws the last error encountered if all retry attempts fail or if a non-retriable error occurs.
+ * @example
+ */
 export async function fetchJSON<T extends Record<string, unknown>>(
   input: RequestInfo | URL,
   init?: RequestInit & { retry?: RetryConfig | number },
 ): Promise<T> {
-  const res = await fetchWithRetry(input, init);
-  return res.json() as Promise<T>;
+  return (await fetchWithRetry(input, init).then((r) =>
+    r.json(),
+  )) as Promise<T>;
 }
