@@ -5,14 +5,14 @@
 </p>
 
 <p align="center">
-  <a href="https://www.npmjs.com/package/@pial/fetch-retry">
-    <img src="https://img.shields.io/npm/v/@pial/fetch-retry" alt="npm version">
+  <a href="https://www.npmjs.com/package/@pial-al-mamun/fetch-retry">
+    <img src="https://img.shields.io/npm/v/@pial-al-mamun/fetch-retry" alt="npm version">
   </a>
-  <a href="https://bundlephobia.com/package/@pial/fetch-retry">
-    <img src="https://img.shields.io/bundlephobia/minzip/@pial/fetch-retry" alt="bundle size">
+  <a href="https://bundlephobia.com/package/@pial-al-mamun/fetch-retry">
+    <img src="https://img.shields.io/bundlephobia/minzip/@pial-al-mamun/fetch-retry" alt="bundle size">
   </a>
-  <a href="https://github.com/pial/fetch-retry/blob/main/LICENSE">
-    <img src="https://img.shields.io/github/license/pial/fetch-retry" alt="license">
+  <a href="https://github.com/Pial-Al-Mamun/FetchWithRetry/blob/main/LICENSE">
+    <img src="https://img.shields.io/badge/license-MIT-blue" alt="license">
   </a>
 </p>
 
