@@ -1,6 +1,6 @@
 {
   "name": "@pial-al-mamun/fetch-retry",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Minimal fetch wrapper with retry, backoff, and jitter",
   "type": "module",
   "main": "./dist/index.js",
