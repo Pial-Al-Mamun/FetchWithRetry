@@ -1,4 +1,4 @@
-<h1 align="center">@pial/fetch-retry</h1>
+<h1 align="center">@pial-al-mamun/fetch-retry</h1>
 
 <p align="center">
   🔄 A 0.74 KB fetch wrapper that doesn't give up.
